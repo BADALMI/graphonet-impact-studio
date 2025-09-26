@@ -200,11 +200,11 @@ const Home = () => {
                 size="lg" 
                 className="border-2 border-white text-white hover:bg-white hover:text-navy px-10 py-6 text-lg font-semibold hover-lift"
               >
-                Book Workshop
+                Get a Quote
               </Button>
             </Link>
           </div>
-        </div>
+            <Link to="/appointment">
       </section>
     </div>
   );
