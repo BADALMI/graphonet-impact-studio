@@ -74,13 +74,13 @@ const Home = () => {
                 </Button>
               </Link>
               
-              <Link to="/careers">
+              <Link to="/appointment">
                 <Button 
                   variant="outline" 
                   size="lg" 
                   className="border-2 border-navy text-navy hover:bg-navy hover:text-white px-8 py-6 text-lg font-semibold hover-lift"
                 >
-                  Join Our Team
+                  Get a Quote
                 </Button>
               </Link>
             </div>
