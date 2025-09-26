@@ -4,6 +4,20 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { X, ZoomIn } from "lucide-react";
 
+// Import product images
+import rollupBanner from "@/assets/products/rollup-banner.jpg";
+import retailWindow from "@/assets/products/retail-window.jpg";
+import customStickers from "@/assets/products/custom-stickers.jpg";
+import storeBranding from "@/assets/products/store-branding.jpg";
+import sandwichFrame from "@/assets/products/sandwich-frame.jpg";
+import signatureBoard from "@/assets/products/signature-board.jpg";
+import metalLetters from "@/assets/products/metal-letters.jpg";
+import popupStand from "@/assets/products/popup-stand.jpg";
+import posDisplay from "@/assets/products/pos-display.jpg";
+import productLabels from "@/assets/products/product-labels.jpg";
+import cafeBranding from "@/assets/products/cafe-branding.jpg";
+import menuFrame from "@/assets/products/menu-frame.jpg";
+
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -19,90 +33,90 @@ const Products = () => {
     { id: "metal", name: "Metal Letter" },
   ];
 
-  // Sample product data with placeholder descriptions
+  // Product data with proper images
   const products = [
     {
       id: 1,
       title: "Roll-up Banner Display",
       category: "popup",
-      image: "https://images.unsplash.com/photo-1553484771-cc0d9b8c2b33?w=500",
+      image: rollupBanner,
       description: "Professional roll-up banner for exhibitions and events"
     },
     {
       id: 2,
       title: "Retail Window Graphics",
       category: "retail",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500",
+      image: retailWindow,
       description: "Eye-catching window displays for retail stores"
     },
     {
       id: 3,
       title: "Custom Brand Stickers",
       category: "stickers",
-      image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=500",
+      image: customStickers,
       description: "High-quality vinyl stickers with custom designs"
     },
     {
       id: 4,
       title: "Store Interior Branding",
       category: "branding",
-      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=500",
+      image: storeBranding,
       description: "Complete store interior branding solutions"
     },
     {
       id: 5,
       title: "A-Frame Sandwich Board",
       category: "frame",
-      image: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=500",
+      image: sandwichFrame,
       description: "Portable sidewalk signs for promotions"
     },
     {
       id: 6,
       title: "Corporate Signature Board",
       category: "signature",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=500",
+      image: signatureBoard,
       description: "Professional signature boards for offices"
     },
     {
       id: 7,
       title: "3D Metal Letters",
       category: "metal",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500",
+      image: metalLetters,
       description: "Premium metal letter signage"
     },
     {
       id: 8,
       title: "Exhibition Pop-up Stand",
       category: "popup",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500",
+      image: popupStand,
       description: "Curved pop-up display for trade shows"
     },
     {
       id: 9,
       title: "Retail Point of Sale",
       category: "retail",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500",
+      image: posDisplay,
       description: "Interactive retail display systems"
     },
     {
       id: 10,
       title: "Product Label Stickers",
       category: "stickers",
-      image: "https://images.unsplash.com/photo-1586953983027-d7508067dcd5?w=500",
+      image: productLabels,
       description: "Durable product labeling solutions"
     },
     {
       id: 11,
       title: "Café Interior Graphics",
       category: "branding",
-      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500",
+      image: cafeBranding,
       description: "Complete café branding and graphics"
     },
     {
       id: 12,
       title: "Menu Display Frame",
       category: "frame",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500",
+      image: menuFrame,
       description: "Elegant menu display solutions"
     }
   ];
