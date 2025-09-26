@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle, Users, Target, Zap, Award } from "lucide-react";
+import { ArrowRight, CircleCheck as CheckCircle, Users, Target, Zap, Award } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import servicesShowcase from "@/assets/services-showcase.jpg";
 
@@ -188,12 +188,14 @@ const Home = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-dark text-white px-10 py-6 text-lg font-semibold hover-lift"
-            >
-              Get Free Quote
-            </Button>
+            <Link to="/appointment">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary-dark text-white px-10 py-6 text-lg font-semibold hover-lift"
+              >
+                Get Free Quote
+              </Button>
+            </Link>
             <Link to="/workshop">
               <Button 
                 variant="outline" 
@@ -204,7 +206,7 @@ const Home = () => {
               </Button>
             </Link>
           </div>
-            <Link to="/appointment">
+        </div>
       </section>
     </div>
   );
